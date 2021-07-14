@@ -1,5 +1,6 @@
 # openAns - SRS
 Open source project for creation and computation of formulas
+<br/><br/>
 ![openAns Logo](./CompleteLogo.png)
 <br/> 
 
