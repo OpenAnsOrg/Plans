@@ -1,10 +1,12 @@
-# Software Requirement Specification
-Subtitle
-
+# openAns - SRS
+Open source project for creation and computation of formulas
+![openAns Logo](./CompleteLogo.png)
 <br/> 
 
 ## Introduction
-
+This document lays out a project plan for the development of “openAns” open source project by Devaraja G.
+<br/>
+The intended readers of this document are current and future developers working on “openAns” and the sponsors of the project. The plan will include, but is not restricted to, a summary of the system functionality, the scope of the project from the perspective of the “openAns” team , scheduling and delivery estimates, project risks and how those risks will be mitigated, the process by which I will develop the project, and metrics and measurements that will be recorded throughout the project.
 <br/> 
 
 ## Overview
