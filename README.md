@@ -1,4 +1,4 @@
-# openAns - SRS
+# [openAns](https://openansorg.github.io) - SRS
 Open source project for creation and computation of formulas
 <br/><br/>
 ![openAns Logo](./CompleteLogo.png)
@@ -12,27 +12,35 @@ The intended readers of this document are current and future developers working 
 
 ## Overview
 Most of the questions we face in scientific world are formula based. But there is no one unified place currently, where we can refer any formula we want, compute using the formula and even contribute our own ones. The model I aim to make is like StackOverflow but for formulae with the included functionality of having your own set of formulas which you can choose to keep private and a way to use that formula by entering the values for variables and calculating the result. The formulae will be written in a programming language, saved in our servers and whenever a user requests it, the file will be sent so that they can do computations on their browser. This will also include a in browser compiler supporting the most popular languages currently (C++, Python, R, Java and Javascript). It's also planned to a GUI for entering the values to the program so that even non-CS background people can work with the formula just by entering the values in the GUI.
+<br/>
 - ### Customers
 Anyone who has questions or answers that are formula based and willing to contribute to the effort of gathering all of the worlds formulae in a single place.
+<br/>
 - ### Functionality
-  - Google account auth
+  - Passwordless auth with JWT
   - See formulae in feed according to search
   - Upvote or downvote public formulae
   - Have personal private formulae
+  - Verified users badge
+  - Verified answers badge
   - A GUI to enter data (can opt out)
   - Generate graphs
   - Comment and disscuss
   - Edit formulae (only creator access)
   - Ask questions and request formulae
   - Have communities
+<br/>
+
 - ### Platform
 Initially planned for web, but since it will use a common backend API, in future a mobile app for Android and iOS will be made too.
+<br/>
+
 - ### Development Responsibilty
 I, Devaraja G, take responsiblity for the software all of it's workings.
 <br/> 
 
 ## Goals and Scope
-- Users must be able to register and login with their google or github accounts.
+- Users must be able to register and login with passwordless auth
 - They can refer formulae (Public access)
 - They can do computations (User access)
 - They can ask questions in communities and get answers
@@ -70,6 +78,9 @@ Yet to be released.
 ## Pricing
 This is a free for all open source project.
 <br/> 
+
+## Security and Authentication
+This project will be using Passwordless authentication with JWT web tokens in order to minimize the chances of a password breach (suprisingly over 80% of breaches today happen with password hacking). JWT is currently considered to be the gold standard for web auth and it paired with passwordless login where a user will get a login link to theur email, improves the robustness of the system.
 
 ## User stories
 
