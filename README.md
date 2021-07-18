@@ -63,13 +63,21 @@ The following will be the risks of my project:
 People already have access to formulae accross the internet scattered accross a wide range of websites
 
 - Risk mitigation
-  - Even though people have access to formulae already, the non existance of a universal platform to refer can compute with those formulae provides us an edge and market.
+  - Even though people have access to formulae already, the non existance of a universal platform to refer and compute with those formulae provides us an edge and market.
 This difference is a so large that it can form a new market, I believe.
 <br/> 
 
 ## Scheduling
 Yet to be released.
 <br/> 
+
+## Business Logic
+There are two main approaches available:
+- Create a GUI system for creating formulae in which others can plug in values and find answer
+- Create a system where a formula is essentially and program and whenever someone wants to use a particular formula they can run the program and give the values in input
+
+After giving it some thought, I have decided to use a program based solution, because it's accurate, dynamic and will also help the goal of creating a library in certain programming languages that will contain all the formulae defined as a function in that language.
+<br/>
 
 ## Technical Process
 Yet to be released.
