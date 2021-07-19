@@ -11,7 +11,7 @@ The intended readers of this document are current and future developers working 
 <br/> 
 
 ## Overview
-Most of the questions we face in scientific world are formula based. But there is no one unified place currently, where we can refer any formula we want, compute using the formula and even contribute our own ones. The model I aim to make is like StackOverflow but for formulae with the included functionality of having your own set of formulas which you can choose to keep private and a way to use that formula by entering the values for variables and calculating the result. The formulae will be written in a programming language, saved in our servers and whenever a user requests it, the file will be sent so that they can do computations on their browser. This will also include a in browser compiler supporting the most popular languages currently (C++, Python, R, Java and Javascript). It's also planned to a GUI for entering the values to the program so that even non-CS background people can work with the formula just by entering the values in the GUI.
+Most of the questions we face in scientific world are formula based. But there is no one unified place currently, where we can refer any formula we want, compute using the formula and even contribute our own ones. The model I aim to make is like StackOverflow but for formulae with the included functionality of having your own set of formulas which you can choose to keep private and a way to use that formula by entering the values for variables and calculating the result. The formulae will be written in a programming language, saved in our servers and whenever a user requests it, the file will be sent so that they can do computations on their browser. This will also include a in browser runtime for python to run the code.
 <br/>
 - ### Customers
 Anyone who has questions or answers that are formula based and willing to contribute to the effort of gathering all of the worlds formulae in a single place.
@@ -23,7 +23,6 @@ Anyone who has questions or answers that are formula based and willing to contri
   - Have personal private formulae
   - Verified users badge
   - Verified answers badge
-  - A GUI to enter data (can opt out)
   - Generate graphs
   - Comment and disscuss
   - Edit formulae (only creator access)
@@ -46,8 +45,6 @@ I, Devaraja G, take responsiblity for the software all of it's workings.
 - They can ask questions in communities and get answers
 - They can upvote or downvote answers based on it's workings
 - They can comment on answers
-- They can do computation in the GUI (can opt out for terminal)
-- They can graph
 - They can have their own private set of formulae too, which can be made easier to use with the GUI
 - They can join communities
 - They can follow other users
@@ -77,6 +74,8 @@ There are two main approaches available:
 - Create a system where a formula is essentially and program and whenever someone wants to use a particular formula they can run the program and give the values in input
 
 After giving it some thought, I have decided to use a program based solution, because it's accurate, dynamic and will also help the goal of creating a library in certain programming languages that will contain all the formulae defined as a function in that language.
+
+Also the initial release is set to be used only Python as the programming language, because the code will be run on client-side inorder to minimize the load on servers. We are set to use [Pyodide](https://pyodide.org/en/stable/) as the  python runtime.
 <br/>
 
 ## Technical Process
