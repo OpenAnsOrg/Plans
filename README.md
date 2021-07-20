@@ -76,6 +76,10 @@ There are two main approaches available:
 After giving it some thought, I have decided to use a program based solution, because it's accurate, dynamic and will also help the goal of creating a library in certain programming languages that will contain all the formulae defined as a function in that language.
 
 Also the initial release is set to be used only Python as the programming language, because the code will be run on client-side inorder to minimize the load on servers. We are set to use [Pyodide](https://pyodide.org/en/stable/) as the  python runtime.
+
+The search results will be displayed in the main page with a try it button, which takes the user to another page prefilled the code of the choice selected previously. It uses Pyodide to run the code and display the output. 
+
+The code is presented inside a editor from "Ace". The code editor and  terminal are resizeable panes. 
 <br/>
 
 ## Technical Process
