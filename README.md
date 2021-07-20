@@ -79,7 +79,11 @@ Also the initial release is set to be used only Python as the programming langua
 
 The search results will be displayed in the main page with a try it button, which takes the user to another page prefilled the code of the choice selected previously. It uses Pyodide to run the code and display the output. 
 
-The code is presented inside a editor from "Ace". The code editor and  terminal are resizeable panes. 
+The code is presented inside a editor from "Codemirror". The code editor and  terminal are resizeable panes. 
+
+For using the formula, the code will be presented using highlight.js, since editting the code is not allowed. Also including codemirror for the usage page increases the size of the page unnecessarily.
+
+Function creation pages will include codemirror.
 <br/>
 
 ## Technical Process
