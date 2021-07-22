@@ -87,7 +87,7 @@ Function creation pages will include codemirror.
 <br/>
 
 ## Technical Process
-Yet to be released.
+The project is expected to use Next.js for frontend and Django Rest Framework for backend.
 <br/> 
 
 ## Pricing
@@ -96,7 +96,8 @@ This is a free for all open source project.
 
 ## Security and Authentication
 This project will be using Passwordless authentication with JWT web tokens in order to minimize the chances of a password breach (suprisingly over 80% of breaches today happen with password hacking). JWT is currently considered to be the gold standard for web auth and it paired with passwordless login where a user will get a login link to theur email, improves the robustness of the system.
-
+<br/>
+The project will be using [NextAuth.js](https://next-auth.js.org/) for authentication.
 ## User stories
 
 <br/> 
