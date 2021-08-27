@@ -123,9 +123,13 @@ This project will be using Email authentication with JWT web tokens in order to 
 Will be done after the release of web-application
 <br/> 
 
-## Marketing
+## Revenue
 In page ads, with a minimal effect on user experience by having only 10% of the page's area alloted for it. Reason behind this is for running the servers and servers and provide the developers some reward for their contribution.
 <br/> 
+
+## Marketing
+This project has no plans for dedicated marketing. It's all on you guys to spread the word😉
+<br/>
 
 ## Summary
 
