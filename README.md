@@ -11,27 +11,29 @@ The intended readers of this document are current and future developers working 
 <br/> 
 
 ## Overview
-Most of the questions we face in scientific world are formula based. But there is no one unified place currently, where we can refer any formula we want, compute using the formula and even contribute our own ones. The model I aim to make is like StackOverflow but for formulae with the included functionality of having your own set of formulas which you can choose to keep private and a way to use that formula by entering the values for variables and calculating the result. The formulae will be written in a programming language, saved in our servers and whenever a user requests it, the file will be sent so that they can do computations on their browser. This will also include a in browser runtime for python to run the code.
+Most of the questions we face in scientific world are formula based. But there is no one unified place currently, where we can refer any formula we want, compute using the formula and even contribute our own ones. The model I aim to make is like StackOverflow but for formulae with the included functionality of having a way to use that formula by entering the values for variables and calculating the result. The formulae will be written in Python language, saved in our servers and whenever a user requests it, the file will be sent so that they can do computations on their browser using a in browser runtime for python to run the code.
 <br/>
 - ### Customers
 Anyone who has questions or answers that are formula based and willing to contribute to the effort of gathering all of the worlds formulae in a single place.
 <br/>
 - ### Functionality
-  - Passwordless auth with JWT
+  - Email auth
   - See formulae in feed according to search
   - Upvote or downvote public formulae
-  - Have personal private formulae
   - Verified users badge
+  - Contributors rank badge
   - Verified answers badge
+  - Use tags
   - Generate graphs
   - Comment and disscuss
   - Edit formulae (only creator access)
   - Ask questions and request formulae
-  - Have communities
+  - Have communities that has their own messages board and posts board
 <br/>
 
 - ### Platform
-Initially planned for web, but since it will use a common backend API, in future a mobile app for Android and iOS will be made too.
+Initially planned for web, but since it will use a common backend API, in future a mobile 
+app for Android and iOS will be made too.
 <br/>
 
 - ### Development Responsibilty
@@ -39,14 +41,14 @@ I, Devaraja G, take responsiblity for the software all of it's workings.
 <br/> 
 
 ## Goals and Scope
-- Users must be able to register and login with passwordless auth
+- Users must be able to register and login with email
 - They can refer formulae (Public access)
 - They can do computations (User access)
 - They can ask questions in communities and get answers
 - They can upvote or downvote answers based on it's workings
 - They can comment on answers
-- They can have their own private set of formulae too, which can be made easier to use with the GUI
 - They can join communities
+- They can post and message in the community
 - They can follow other users
 <br/> 
 
@@ -71,7 +73,7 @@ Yet to be released.
 ## Business Logic
 There are two main approaches available:
 - Create a GUI system for creating formulae in which others can plug in values and find answer
-- Create a system where a formula is essentially and program and whenever someone wants to use a particular formula they can run the program and give the values in input
+- Create a system where a formula is essentially a program and whenever someone wants to use a particular formula they can run the program and give the values in input
 
 After giving it some thought, I have decided to use a program based solution, because it's accurate, dynamic and will also help the goal of creating a library in certain programming languages that will contain all the formulae defined as a function in that language.
 
@@ -87,7 +89,7 @@ Function creation pages will include codemirror.
 <br/>
 
 ## Technical Process
-The project is expected to use Next.js for frontend and Django Rest Framework for backend.
+The project uses typescript based Next.js for frontend and GraphQL with Apollo Express for backend with Postgres as database.
 <br/> 
 
 ## Pricing
@@ -95,9 +97,8 @@ This is a free for all open source project.
 <br/> 
 
 ## Security and Authentication
-This project will be using Passwordless authentication with JWT web tokens in order to minimize the chances of a password breach (suprisingly over 80% of breaches today happen with password hacking). JWT is currently considered to be the gold standard for web auth and it paired with passwordless login where a user will get a login link to theur email, improves the robustness of the system.
+This project will be using Email authentication with JWT web tokens in order to minimize the chances of a password breach (suprisingly over 80% of breaches today happen with password hacking).
 <br/>
-The project will be using [NextAuth.js](https://next-auth.js.org/) for authentication.
 ## User stories
 
 <br/> 
