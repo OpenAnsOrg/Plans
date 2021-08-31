@@ -112,7 +112,18 @@ This project will be using Email authentication with JWT web tokens in order to 
 <br/> 
 
 ## Backend Design
-
+The backend for openAns will be implemented using the following technologies:
+ - NodeJS (JS)
+ - Express
+ - GraphQL
+ - Apollo Server
+ - Passport (For auth)
+ - Prisma (For ORM and DB migrations)
+ - Nexus (For Code-First GraphQL schema)
+ - Postgres (Default database)
+ - Redis (Session storage)
+ - AWS S3 (For image storage)
+ - Heroku (For hosting)
 <br/> 
 
 ## Frontend (Web)
